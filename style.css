@@ -1,0 +1,239 @@
+:root {
+    --y: #f4cb25;
+    --r: #f8000c;
+    --b: #060606;
+    --w: #f4f4f4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    /* background-image: url(lufy.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.lufy {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    border: 5px solid var(--b);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--b);
+}
+
+
+.hat {
+    position: absolute;
+    top: -115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 325px;
+    height: 170px;
+    z-index: 6;
+}
+
+.hat-top {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background: var(--y);
+    border: 5px solid var(--b);
+    width: 320px;
+    height: 170px;
+    border-radius: 160px 160px 0 0;
+    overflow: hidden;
+}
+
+.redline {
+    position: absolute;
+    top: 95px;
+    width: 110%;
+    height: 50px;
+    background: var(--r);
+    border: 5px solid var(--b);
+}
+
+.hat-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 490px;
+    height: 30px;
+    border-radius: 100px;
+    background: var(--y);
+    border: 5px solid var(--b);
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    background: var(--w);
+    border: 5px solid var(--b);
+    width: 320px;
+    height: 170px;
+    border-radius: 0 0 150px 150px;
+    padding-top: 35px;
+    z-index: 5;
+}
+
+.eye {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--b);
+    margin: 0 18px;
+}
+
+
+.nose {
+    width: 35px;
+    height: 30px;
+    background: var(--b);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.mouth {
+    position: absolute;
+    top: 410px;
+    width: 210px;
+    height: 220px;
+    border-radius: 40% 40% 50% 50%;
+    background: var(--w);
+    border: 5px solid var(--b);
+    overflow: hidden;
+    z-index: 3;
+}
+
+.cr {
+    position: absolute;
+    right: -5%;
+    bottom: 51%;
+    width: 110%;
+    height: 55%;
+    border: 5px solid var(--b);
+    border-radius: 50%;
+}
+
+.cr2 {
+    position: absolute;
+    right: -10%;
+    bottom: 33%;
+    width: 120%;
+    height: 60%;
+    border-bottom: 5px solid var(--b);
+    border-left: 5px solid var(--b);
+    border-right: 5px solid var(--b);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    background: var(--b);
+}
+
+.line1 {
+    rotate: -80deg;
+    right: 20%;
+}
+
+.line2 {
+    rotate: -90deg;
+}
+
+.line3 {
+    rotate: 80deg;
+    left: 20%;
+}
+
+.bones {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+}
+
+.bone {
+    position: absolute;
+    width: 530px;
+    height: 55px;
+    background: var(--w);
+    border: 5px solid var(--b);
+    z-index: 2;
+}
+
+.bone1 {
+    rotate: -43deg;
+}
+
+.bone2 {
+    rotate: calc(180deg + 43deg);
+
+}
+
+.bone-cr {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: var(--w);
+    border: 5px solid var(--b);
+    border-radius: 50%;
+}
+
+.bone-cr1 {
+    left: -8%;
+    bottom: 40%;
+    border-bottom: 5px solid var(--w);
+    rotate: -33deg;
+}
+
+.bone-cr2 {
+    left: -8%;
+    top: 40%;
+    border-top: 5px solid var(--w);
+    rotate: 32deg;
+}
+
+.bone-cr3 {
+    right: -8%;
+    bottom: 40%;
+    border-bottom: 5px solid var(--w);
+    rotate: 33deg;
+}
+
+.bone-cr4 {
+    right: -8%;
+    top: 40%;
+    border-top: 5px solid var(--w);
+    rotate: -32deg;
+}
